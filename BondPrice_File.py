@@ -1,4 +1,4 @@
-def PriceBond(y, face, couponRate, m, ppy=1):
+def getBondPrice(y, face, couponRate, m, ppy=1):
     pvcfsum = 0
     cf = face * couponRate / ppy  
     
@@ -19,10 +19,10 @@ m = 10
 
 
 ppy = 1
-price_1 = PriceBond(y, face, couponRate, m, ppy)
+price_1 = getBondPrice(y, face, couponRate, m, ppy)
 print(price_1)
 
 
 ppy = 2
-price_2 = PriceBond(y, face, couponRate, m, ppy)
+price_2 = getBondPrice(y, face, couponRate, m, ppy)
 print(price_2)
